@@ -87,10 +87,10 @@
     background-color: aqua;
     width: 15%;
   }
-  .main-inicio-boton-negro button {
-    padding: 15vh;
-    background-color: #000000;
-    color: #ffffff;
+  button {
+    padding: 5vh 10vh;
+    background-color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
