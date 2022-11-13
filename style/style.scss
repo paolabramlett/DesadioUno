@@ -5,17 +5,126 @@
 
 @media screen and (max-width: 600px) {
 
-    %centrar {
+    
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        height: 10vh;
+        border: #000000 solid 1px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+        padding-left: 5vh;
+    }
+
+    nav {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: beige;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav li {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .contactanos-boton {
+        width: 100%;
+        height: 6vh;
+        background-color: #000000;
+        border-radius: 5%;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .main-inicio {
+        width: 100%;
+
+    }
+
+    .main-inicio p {
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 19px;
+        color: #858585;
+    }
+
+    .main-inicio h1 {
+        text-align: center;
+        font-size: 56px;
+        font-weight: 400px;
+        margin-top: 5vh;
+        
+    }
+
+    .main-inicio-botones {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-inicio-boton {
+        background-color: aqua;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-inicio-boton button {
+        padding: 5vh 10vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        
     }
 
 
     .main-articulo {
         width: 100%;
-        height: 500px;
-        background-image: url(../img/fondo-1-laptop.jpg);
+        height: auto;
+        background-image: url(../img/fondo-1-mobil.jpg);
         padding-top: 15vh;
     }
 
@@ -23,19 +132,22 @@
         margin-left: 5vh;
         width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .main-articulo-header {
-        width: 49%;
-        order: 2;
+        width: 100%;
+
     }
 
     .main-articulo-imagen {
         width: 100%;
         height: 100%;
-        @extend %centrar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-articulo h1 {
@@ -46,7 +158,7 @@
     }
 
     .main-articulo-body {
-        width: 49%;
+        width: 100%;
     }
 
     .main-articulo-body h1 {
@@ -90,9 +202,8 @@
 
     .main-tienda {
         width: 100%;
-        height: 700px;
-        background-color: #ebebeb;
-        position: absolute;
+        height: auto;
+        background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%); 
     }
 
     .main-tienda button {
@@ -113,52 +224,48 @@
     }
 
     .main-tienda-boton {
-        @extend %centrar;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-tienda h1 {
         font-size: 32px;
         font-weight: 400px;
         text-align: center;
-        padding: 5vh 0vh 5vh 0vh;
-        
+        padding: 5vh 0vh 5vh 0vh;  
     }
 
     .main-tienda-cajas {
         width: 100%;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        margin-top: 20vh;
+        justify-content: center;
+        margin-top: 5vh;
     }
+
     .main-tienda-caja {
-        width: 25vw;
-        height: 40vh;
+        width: 80vw;
         background-color: #ffffff;
         border-radius: 10%;
         box-shadow: 5px 10px 8px #888888;
-        position: relative;
-        padding-top: 10vh;
-        
-        
+        margin-bottom: 10vh;  
     }
 
     .main-tienda-caja-img {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        top: -100px;
-        right: -50px;
-        z-index: 9;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .main-tienda-caja-texto {
         width: 90%;
+        height: 100%;
     }
-
-   
-    
 
     .main-tienda-caja-texto h2 {
         font-size: 16px;
@@ -192,10 +299,11 @@
 
     .main-tienda-precio button {
         margin: 0;
-        padding: 1px 1px;
-        background-color: white;
+        padding: 6px 9px;
+        background-color: #000000;
         border: none;
         border-radius: 10%;
+        text-align: center;
         color: white;
         display: inline-block;
     }
@@ -275,7 +383,7 @@
     main {
         width: 100%;
         height: auto;
-        background-color: azure;
+        
     }
 
     .main-inicio {
@@ -399,7 +507,7 @@
     .main-tienda {
         width: 100%;
         height: 700px;
-        background-color: #ebebeb;
+        background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
         position: absolute;
     }
 
@@ -500,8 +608,8 @@
 
     .main-tienda-precio button {
         margin: 0;
-        padding: 1px 1px;
-        background-color: white;
+        padding: 6px 9px;
+        background-color: #000000;
         border: none;
         border-radius: 10%;
         color: white;
