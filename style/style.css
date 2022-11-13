@@ -4,7 +4,7 @@
 }
 
 @media screen and (min-width: 800px) {
-  .main-inicio-boton, .main-inicio-botones, nav {
+  .main-articulo-imagen, .main-inicio-boton, .main-inicio-botones, nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@
     background-color: aqua;
     width: 15%;
   }
-  button {
+  .main-inicio-boton button {
     padding: 5vh 10vh;
     background-color: black;
     color: white;
@@ -95,5 +95,88 @@
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
+  }
+  .main-articulo {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/fondo-1-laptop.jpg);
+    padding-top: 15vh;
+  }
+  .main-articulo-content {
+    margin-left: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-articulo-header {
+    width: 49%;
+    order: 2;
+  }
+  .main-articulo-imagen {
+    width: 100%;
+    height: 100%;
+  }
+  .main-articulo h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400px;
+    color: #000000;
+  }
+  .main-articulo-body {
+    width: 49%;
+  }
+  .main-articulo-body h1 {
+    font-size: 24px;
+    font-weight: 400px;
+    text-align: justify;
+    margin: 5vh 0 5vh 0;
+    color: #ffffff;
+  }
+  .main-articulo-body p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .main-articulo-boton {
+    margin: 5vh 0 0 0;
+    padding: 2vh 10vh;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+  }
+  .main-articulo-boton a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .main-tienda {
+    width: 100%;
+  }
+  .main-tienda h1 {
+    font-size: 32px;
+    font-weight: 400px;
+    text-align: center;
+  }
+  .main-tienda-cajas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-tienda-caja {
+    width: 25vw;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 10%;
+  }
+  .main-tienda-caja h2 {
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: justify;
+  }
+  .main-tienda-caja p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
