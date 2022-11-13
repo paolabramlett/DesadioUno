@@ -4,6 +4,201 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    %centrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .main-articulo {
+        width: 100%;
+        height: 500px;
+        background-image: url(../img/fondo-1-laptop.jpg);
+        padding-top: 15vh;
+    }
+
+    .main-articulo-content {
+        margin-left: 5vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main-articulo-header {
+        width: 49%;
+        order: 2;
+    }
+
+    .main-articulo-imagen {
+        width: 100%;
+        height: 100%;
+        @extend %centrar;
+    }
+
+    .main-articulo h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 400px;
+        color: #000000;
+    }
+
+    .main-articulo-body {
+        width: 49%;
+    }
+
+    .main-articulo-body h1 {
+        font-size: 24px;
+        font-weight: 400px;
+        text-align: justify;
+        margin: 5vh 0 5vh 0;
+        color: #ffffff;
+    }
+
+    .main-articulo-body p {
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .main-articulo-body-valoracion {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main-articulo-body-estrellas {
+        margin: 1vh;
+    }
+
+    .main-articulo-boton {
+        margin: 5vh 0 0 0;
+        padding: 2vh 10vh;
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .main-articulo-boton a {
+        text-decoration: none;
+        color:#ffffff;
+    }
+
+    .main-tienda {
+        width: 100%;
+        height: 700px;
+        background-color: #ebebeb;
+        position: absolute;
+    }
+
+    .main-tienda button {
+        margin: 10vh 0 0 0;
+        padding: 2vh 10vh;
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        
+    }
+
+    .main-tienda a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .main-tienda-boton {
+        @extend %centrar;
+
+    }
+
+    .main-tienda h1 {
+        font-size: 32px;
+        font-weight: 400px;
+        text-align: center;
+        padding: 5vh 0vh 5vh 0vh;
+        
+    }
+
+    .main-tienda-cajas {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20vh;
+    }
+    .main-tienda-caja {
+        width: 25vw;
+        height: 40vh;
+        background-color: #ffffff;
+        border-radius: 10%;
+        box-shadow: 5px 10px 8px #888888;
+        position: relative;
+        padding-top: 10vh;
+        
+        
+    }
+
+    .main-tienda-caja-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -100px;
+        right: -50px;
+        z-index: 9;
+    }
+
+    .main-tienda-caja-texto {
+        width: 90%;
+    }
+
+   
+    
+
+    .main-tienda-caja-texto h2 {
+        font-size: 16px;
+        font-weight: 400px;
+        text-align: justify;
+        margin: 10vh 0 0 3vh;
+
+    }
+
+    .main-tienda-caja-texto p {
+        font-size: 12px;
+        text-align: justify;
+        margin: 5vh 0 0 3vh;
+    }
+
+    .main-tienda-precio { 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 4vh 1vh 4vh 1vh;
+    }
+
+    .main-tienda-precio-caja {
+        padding: 1vh 2vh;
+        border: #000000 solid 1px;
+        border-radius: 10%;
+        
+    }
+
+
+    .main-tienda-precio button {
+        margin: 0;
+        padding: 1px 1px;
+        background-color: white;
+        border: none;
+        border-radius: 10%;
+        color: white;
+        display: inline-block;
+    }
     
 }
 
@@ -15,15 +210,7 @@
         align-items: center;
     }
 
-    @mixin boton ($color, $back) {
-        padding: 15vh 32vh;
-        background-color: $back;
-        color: $color;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        display: inline-block;
-    }
+    
 
     body {
         width: 100%;
@@ -181,6 +368,16 @@
     .main-articulo-body p {
         font-size: 16px;
         color: #ffffff;
+    }
+
+    .main-articulo-body-valoracion {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main-articulo-body-estrellas {
+        margin: 1vh;
     }
 
     .main-articulo-boton {

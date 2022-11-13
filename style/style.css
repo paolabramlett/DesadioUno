@@ -137,6 +137,14 @@
     font-size: 16px;
     color: #ffffff;
   }
+  .main-articulo-body-valoracion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main-articulo-body-estrellas {
+    margin: 1vh;
+  }
   .main-articulo-boton {
     margin: 5vh 0 0 0;
     padding: 2vh 10vh;
