@@ -32,29 +32,7 @@
     nav {
         width: 50%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: beige;
-    }
-
-    nav ul {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    nav li {
-        width: 100%;
-        height: 100%;
-        list-style: none;
-        text-align: center;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #000000;
+        display: none;
     }
 
     .contactanos-boton {
@@ -71,17 +49,20 @@
     main {
         width: 100%;
         height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         
     }
 
     .main-inicio {
         width: 100%;
-
+        
     }
-
+    
     .main-inicio p {
         text-align: center;
-        margin-top: 10vh;
+        margin-top: 5vh;
         font-size: 19px;
         color: #858585;
     }
@@ -90,7 +71,7 @@
         text-align: center;
         font-size: 56px;
         font-weight: 400px;
-        margin-top: 5vh;
+        margin-bottom: 5vh;
         
     }
 
@@ -102,22 +83,63 @@
     }
 
     .main-inicio-boton {
-        background-color: aqua;
-        width: 15%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .main-inicio-boton button {
-        padding: 5vh 10vh;
-        background-color: black;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
+    .main-inicio-boton-negro {
+        margin: 0;
+        padding: 1vh 5vh;
+        background-color: #000000;
+        border: none;
+        border-radius: 10%;
         display: inline-block;
-        
+    }
+
+    .main-inicio-boton-negro a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .main-inicio-boton-blanco{
+        margin: 0;
+        padding: 1vh 5vh;
+        background-color: #ffffff;
+        border: #000000 solid 2px;
+        border-radius: 10%;
+        display: inline-block;
+    }
+
+    .main-inicio-boton-blanco a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .main-inicio-imagen {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main-inicio-img  {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-inicio-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .main-inicio-iconos {
+        display: none;
+    
     }
 
 
@@ -125,11 +147,10 @@
         width: 100%;
         height: auto;
         background-image: url(../img/fondo-1-mobil.jpg);
-        padding-top: 15vh;
+  
     }
 
     .main-articulo-content {
-        margin-left: 5vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -143,11 +164,16 @@
     }
 
     .main-articulo-imagen {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .main-articulo-imagen img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .main-articulo h1 {
@@ -165,24 +191,35 @@
         font-size: 24px;
         font-weight: 400px;
         text-align: justify;
-        margin: 5vh 0 5vh 0;
+        margin: 2vh 0 2vh 0;
         color: #ffffff;
+        text-align: center;
     }
 
     .main-articulo-body p {
         font-size: 16px;
         color: #ffffff;
+        text-align: center;
     }
 
     .main-articulo-body-valoracion {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .main-articulo-body-estrellas {
         margin: 1vh;
     }
+
+    .container-boton {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+
 
     .main-articulo-boton {
         margin: 5vh 0 0 0;
@@ -192,7 +229,7 @@
         color: white;
         text-align: center;
         font-size: 16px;
-        display: inline-block;
+        
     }
 
     .main-articulo-boton a {
@@ -207,7 +244,6 @@
     }
 
     .main-tienda button {
-        margin: 10vh 0 0 0;
         padding: 2vh 10vh;
         background-color: black;
         border: none;
@@ -373,11 +409,11 @@
         width: 100%;
         height: 6vh;
         background-color: #000000;
-        border-radius: 5%;
         color: #ffffff;
         display: flex;
         align-items: center;
-        justify-content: center;        
+        justify-content: center; 
+          
     }
 
     main {
@@ -412,20 +448,64 @@
     }
 
     .main-inicio-boton {
-        background-color: aqua;
+        margin: 5vh 0 0 5vh;
         width: 15%;
         @extend %centrar;
     }
 
-    .main-inicio-boton button {
-        padding: 5vh 10vh;
-        background-color: black;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
+    .main-inicio-boton-negro {
+        margin: 0;
+        padding: 6px 20px;
+        background-color: #000000;
+        border: none;
+        border-radius: 10%;
         display: inline-block;
-        
+    }
+
+    .main-inicio-boton-negro a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .main-inicio-boton-blanco{
+        margin: 0;
+        padding: 6px 9px;
+        background-color: #ffffff;
+        border: #000000 solid 2px;
+        border-radius: 10%;
+        display: inline-block;
+    }
+
+    .main-inicio-imagen {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main-inicio-img  {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-inicio-iconos {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .main-inicio-iconos img {
+        width: 30%;
+        height: 30%;
+        padding: 5vh 0 0 0;
+    }
+
+    .main-inicio-boton-blanco a {
+        text-decoration: none;
+        color: #000000;
     }
 
     .main-articulo {
