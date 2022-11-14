@@ -11,7 +11,6 @@
   header {
     width: 100%;
     height: 10vh;
-    border: #000000 solid 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +20,6 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
     padding-left: 5vh;
   }
   nav {
@@ -296,7 +294,6 @@
   header {
     width: 100%;
     height: 10vh;
-    border: #000000 solid 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -306,13 +303,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
     padding-left: 5vh;
   }
   nav {
     width: 50%;
     height: 100%;
-    background-color: beige;
   }
   nav ul {
     width: 100%;
