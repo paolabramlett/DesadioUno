@@ -142,6 +142,13 @@ body{
         }
     }
 
+    .main-articulo {
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/fondo-1-mobil.jpg);
+        padding-top: 5vh;
+    }
+
 
     .main-articulo-imagen img {
         max-width: 100%;
@@ -314,123 +321,6 @@ body{
         text-align: center;
         color: white;
         display: inline-block;
-    .main-contacto{
-        position: relative; 
-        height: 125vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        background-image: url(https://i.ibb.co/nfWpQSw/fondo-2-mobil.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    .main-contacto::before{
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: rgba(0,0,0,0.001);
-    }
-    .main-contacto-header{
-        width: 100%;
-        text-align: center;
-        height: 10vh;
-        justify-content: center;
-        align-items: flex-start;
-    
-    }
-    .main-contacto-header p{
-        font-size: 16px;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -50%;    
-    }
-    .main-contacto-formulario{
-        width: 50%;
-        height: 80vh;
-        padding-left: 11.5%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }    
-    .main-contacto-formulario h3{
-        float: left;
-        padding-bottom: 1.5%;
-    }
-    .main-contacto-formulario-caja{
-        width: 80%;
-        height: 30px;
-        background: rgba(0, 0, 0, 0.65);
-        border: 1px solid #FFFFFF;
-        border-radius: 4px;
-        align-content: center;
-        justify-content: center;
-    }
-    .main-contacto-formulario-cajota{
-        width: 80%;
-        height: 150px;
-        background: rgba(0, 0, 0, 0.65);
-        border: 1px solid #FFFFFF;
-        border-radius: 4px;
-    }
-    #enviar-button{
-        width: 80%;
-        height: 32px;
-        left: 248px;
-        top: 3178px;
-        background: #000000;
-        border-radius: 8px;
-        color: white;
-        margin-top: 5%;
-    }
-    .main-partners{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: linear-gradient(grey, white)
-    }
-    #tohide{
-        display: none;
-    }
-    .main-partners h1{
-        margin-top: 5%;
-    }
-    .main-partners-images{
-        width: 100%;
-        height: 80%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line1{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line2{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-left: 25%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line3{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
     
 }
@@ -628,9 +518,9 @@ body{
 
     .main-articulo {
         width: 100%;
-        height: 500px;
+        height: 600px;
         background-image: url(../img/fondo-1-laptop.jpg);
-        padding-top: 15vh;
+        padding-top: 5vh;
     }
 
     .main-articulo-content {
@@ -771,6 +661,9 @@ body{
         width: 90%;
     }
 
+   
+    
+
     .main-tienda-caja-texto h2 {
         font-size: 16px;
         font-weight: 400px;
@@ -813,111 +706,3 @@ body{
 
     
 }
-    }
-    .main-contacto{
-        position: relative; 
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        background-image: url(https://i.ibb.co/nfWpQSw/fondo-2-mobil.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    .main-contacto::before{
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: rgba(0,0,0,0.001);
-    }
-    .main-contacto-header{
-        width: 50%;
-        text-align: center;
-        height: 5vh;
-        padding-top: 3.5%;
-    }
-    .main-contacto-header p{
-        margin-top: 5%;
-        font-size: 16px;
-    }
-    .main-contacto-formulario{
-        width: 50%;
-        height: 80vh;
-        padding-left: 11.5%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }    
-    .main-contacto-formulario h3{
-        float: left;
-        padding-bottom: 1.5%;
-    }
-    .main-contacto-formulario-caja{
-        width: 80%;
-        height: 30px;
-        background: rgba(0, 0, 0, 0.65);
-        border: 1px solid #FFFFFF;
-        border-radius: 4px;
-        align-content: center;
-        justify-content: center;
-    }
-    .main-contacto-formulario-cajota{
-        width: 80%;
-        height: 150px;
-        background: rgba(0, 0, 0, 0.65);
-        border: 1px solid #FFFFFF;
-        border-radius: 4px;
-    }
-    #enviar-button{
-        width: 80%;
-        height: 32px;
-        left: 248px;
-        top: 3178px;
-        background: #000000;
-        border-radius: 8px;
-        color: white;
-        margin-top: 5%;
-    }
-    .main-partners{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: linear-gradient(grey, white)
-    }
-    .main-partners h1{
-        margin-top: 5%;
-    }
-    .main-partners-images{
-        width: 100%;
-        height: 80%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line1{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line2{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .main-partners-images-line3{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
